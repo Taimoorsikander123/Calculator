@@ -80,6 +80,7 @@
             this.DotButton.TabIndex = 1;
             this.DotButton.Text = ".";
             this.DotButton.UseVisualStyleBackColor = true;
+            this.DotButton.Click += new System.EventHandler(this.num_Click);
             // 
             // EqualButton
             // 
@@ -90,6 +91,7 @@
             this.EqualButton.TabIndex = 1;
             this.EqualButton.Text = "=";
             this.EqualButton.UseVisualStyleBackColor = true;
+            this.EqualButton.Click += new System.EventHandler(this.EqualTo_Click);
             // 
             // OneButton
             // 
@@ -274,7 +276,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "DEC";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.operat_click);
+            this.button3.Click += new System.EventHandler(this.decimalcovert);
             // 
             // button4
             // 
@@ -285,7 +287,7 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "BIN";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.operat_click);
+            this.button4.Click += new System.EventHandler(this.BINcovert);
             // 
             // Form1
             // 
@@ -316,6 +318,7 @@
             this.Controls.Add(this.textBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
